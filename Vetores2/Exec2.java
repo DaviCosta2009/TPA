@@ -15,10 +15,19 @@ public class Exec2 {
 
        
         System.out.println("\n--- Tabuadas ---\n");
-        for (int elemento : A) {
+
+
+        for (int i = 0; i < 5; i++) { 
+            
+           
+            int elemento = A[i]; 
+            
+          
             System.out.println("Tabuada do " + elemento + ":");
-            for (int i = 1; i <= 10; i++) {
-                System.out.println(elemento + " x " + i + " = " + (elemento * i));
+            
+            
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(elemento + " x " + j + " = " + (elemento * j));
             }
             
             System.out.println();
