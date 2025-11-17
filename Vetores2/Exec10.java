@@ -8,15 +8,15 @@ public class Exec10 {
     	
         Scanner leia = new Scanner(System.in);
 
-        int TAM = 10;
+        int TAM = 10; //constante com valor 10 (máximo)
         int TAMC = 0; 
 
-        int[] A = new int[TAM];
+        int[] A = new int[TAM]; //declaração de vetores
         int[] B = new int[TAM];
         int[] C = new int[TAM]; 
 
         int i, j, k; //  3 tipos de indices pra cada vetor...
-        int ExisteEmC, ExisteEmB; 
+        int ExisteEmC, ExisteEmB; //variaveis para valores existentes
         
 
         
@@ -40,7 +40,7 @@ public class Exec10 {
             
             for (j = 0; j < TAM; j++) {
                 if (A[i] == B[j]) {
-                    ExisteEmB = 1; 
+                    ExisteEmB = 1; //se o número na posição do indice i for o mesmo da posição do indice j significa que aquele valor existem em B
                           
                 }
             }
@@ -53,7 +53,7 @@ public class Exec10 {
                
                 for (k = 0; k < TAMC; k++) {
                     if (A[i] == C[k]) {
-                        ExisteEmC = 1;
+                        ExisteEmC = 1; //se o número na posição do indice i for o mesmo da posição do indice k significa que aquele valor existem em C
                         
                     }
                 }
