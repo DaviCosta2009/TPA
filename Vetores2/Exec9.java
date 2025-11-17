@@ -1,0 +1,90 @@
+package vetores2;
+
+import java.util.Scanner;
+
+public class Exec9 {
+
+    public static void main(String[] args) {
+    	
+        Scanner leia = new Scanner(System.in);
+        
+        int TAM = 10;
+        int TAMC = 0; 
+        
+        int[] A = new int[TAM];
+        int[] B = new int[TAM];
+        int[] C = new int[TAM]; 
+        
+        
+        int i, j, k; //  3 tipos de indices pra cada vetor...
+        
+        int encontrado;
+        int ExisteEmC;
+
+       
+        for (i = 0; i < TAM; i++) {
+            System.out.print("Digite o " + (i + 1) + "o elemento de A: ");
+            A[i] = leia.nextInt();
+            
+            
+        }
+        
+        
+        for (i = 0; i < TAM; i++) {
+            System.out.print("Digite o " + (i + 1) + "o elemento de B: ");
+            B[i] = leia.nextInt();
+            
+            
+        }
+
+        
+        
+        for (i = 0; i < TAM; i++) { 
+            encontrado = 0; 
+            
+            
+            for (j = 0; j < TAM; j++) {
+                if (A[i] == B[j]) {
+                    encontrado = 1; 
+                    
+                }
+            }
+            
+            
+            if (encontrado == 1) {
+            	ExisteEmC = 0; 
+                for (k = 0; k < TAMC; k++) {
+                    if (A[i] == C[k]) {
+                    	ExisteEmC = 1; 
+                        
+                    }
+                }
+                
+               
+                if (ExisteEmC == 0) {
+                    C[TAMC] = A[i];
+                    TAMC = TAMC + 1;
+                }
+            }
+        }
+        
+        
+        System.out.println("\n--- Intersecao Vetor C ---");
+        System.out.print("C = {");
+        
+        
+        for (i = 0; i < TAMC; i++) {
+            System.out.print(C[i]);
+            
+            if (i < TAMC - 1) {
+                System.out.print(", ");
+                
+            }
+            
+        }
+        System.out.println("}");
+        
+        leia.close();
+        
+    }
+}
