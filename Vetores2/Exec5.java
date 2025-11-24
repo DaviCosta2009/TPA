@@ -11,9 +11,9 @@ public class Exec5 {
         
         int i;
         
-        int elemento;
+        int elemento; //pra armazenar um valor temporariamente
         
-        int j;
+        int j;  // vai ser usado para testar cada número como um divisor
         
         
         for (i = 0; i < 10; i++) {
@@ -26,16 +26,16 @@ public class Exec5 {
         
         for (i = 0; i < 10; i++) {
             elemento = A[i];
-            System.out.print("Elemento " + elemento + ": Divisores: ");
+            System.out.print("Elemento " + elemento + " Divisores: ");
             
            
             j = 1;
             while (j <= elemento) {
-                if (elemento % j == 0) {
+                if (elemento % j == 0) { //se o resto da divisão por j for 0, então achamos um divisor
                     System.out.print(j);
                     
                     
-                    if (j < elemento) { 
+                    if (j < elemento) {  // só mostra a virgula se não for o ultimo numero da sequencia
                         System.out.print(", ");
                     }
                 }
