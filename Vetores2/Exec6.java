@@ -21,7 +21,7 @@ public class Exec6 {
             A[i] = potenciaA; 
             
             
-            System.out.println("A[" + i + "] = 2^" + i + " = " + A[i]);
+            System.out.println("A[" + i + "] = 2^" + i + " = " + A[i]); // o ^ significa "elevado"
             
             
             
