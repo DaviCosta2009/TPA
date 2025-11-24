@@ -18,17 +18,17 @@ public class Exec7 {
         int fatorial;
 
         for (i = 0; i < TAM; i++) {
-            System.out.print("Digite o " + (i + 1) + "° numero inteiro (Recomendado 0 a 12): ");
+            System.out.print("Digite o " + (i + 1) + "° numero inteiro (Recomendado 0 a 12): "); // é recomendado porque passando de 12 da erro.
             A[i] = leia.nextInt();
         }
 
         
-        System.out.println("\n--- Fatoriais ---\n");
+        System.out.println("-- Fatoriais --");
         for (i = 0; i < TAM; i++) {
             numero = A[i];
             
             
-            fatorial = 1;
+            fatorial = 1; 
             
             if (numero < 0) {
                 fatorial = 0; 
