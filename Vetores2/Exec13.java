@@ -28,7 +28,7 @@ public class Exec13 {
         	idireita = TAM - 1 - i;
         	
         	if (A[i] != A[idireita])	{	//o != serve pra indicar se é diferente
-        		palindromo = 0;
+        		palindromo = 0; //mostra que não é caso verdadeiro
         	}
         	i++;
         }
