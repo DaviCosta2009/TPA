@@ -26,11 +26,11 @@ public class Exec14 {
         
         for (i = 0; i < TAM; i++) {
         	
-        	if (A[i] % 2 == 0 ) {
-        		B[i] = 1;
+        	if (A[i] % 2 == 0 ) { //verifica se é par
+        		B[i] = 1; //se for é 1
         		
         	} else {
-        		B[i] = 0;
+        		B[i] = 0; //se nao for é 0
         	}
         }
         
