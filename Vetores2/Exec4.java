@@ -24,17 +24,17 @@ public class Exec4 {
             System.out.print("Elemento " + elemento + ": Pares: ");
             
             
-            j = 0;
+            j = 0; // j começa em 0 porque vamos contar pares
             
-            while (j <= elemento) {
+            while (j <= elemento) {  // sempre que j for menor ou igual ao elemento vamos mostrar os pares
                 
-                System.out.print(j);
+                System.out.print(j); //mostra o valor atual 
                 
-                
+                //só vai mostrar a vírgula se nao for o último número da sequência
                 if (j + 2 <= elemento) {
                     System.out.print(", ");
                 }
-                j = j + 2;
+                j = j + 2; // adiciona de 2 em 2 pra pegar somente números pares
             }
             System.out.println(); 
         }
