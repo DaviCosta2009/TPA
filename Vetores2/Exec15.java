@@ -37,16 +37,16 @@ public class Exec15 {
         System.out.println();
       
         
-        for (i = 0; i < TAM; i++) {
+        for (i = 0; i < TAM; i++) { 
         	
-        	if (A[i] > B[i] ) {
+        	if (A[i] > B[i] ) {// se o valor do indice A for maior que o de B, C recebe 1
         		
         		C[i] = 1;
         		
-        	} else if (A[i] == B[i]) {
+        	} else if (A[i] == B[i]) {// se o valor do indice A for igual o de B, C recebe 0
         		C[i] = 0;
         		
-        	} else {
+        	} else {// se o valor do indice A for menor que o de B, C recebe -1
         		C[i] = -1;
         	}
         }
