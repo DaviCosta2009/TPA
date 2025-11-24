@@ -16,7 +16,7 @@ public class Exec10 {
         int[] C = new int[TAM]; 
 
         int i, j, k; //  3 tipos de indices pra cada vetor...
-        int ExisteEmC, ExisteEmB; //variaveis para valores existentes
+        int existeEmC, existeEmB; //variaveis para valores existentes
         
 
         
@@ -35,31 +35,31 @@ public class Exec10 {
 
         
         for (i = 0; i < TAM; i++) { 
-            ExisteEmB = 0; 
+            existeEmB = 0; 
 
             
             for (j = 0; j < TAM; j++) {
                 if (A[i] == B[j]) {
-                    ExisteEmB = 1; //se o número na posição do indice i for o mesmo da posição do indice j significa que aquele valor existem em B
+                    existeEmB = 1; //se o número na posição do indice i for o mesmo da posição do indice j significa que aquele valor existem em B
                           
                 }
             }
 
             
             
-            if (ExisteEmB == 0) {
-                ExisteEmC = 0; 
+            if (existeEmB == 0) {
+                existeEmC = 0; 
 
                
                 for (k = 0; k < TAMC; k++) {
                     if (A[i] == C[k]) {
-                        ExisteEmC = 1; //se o número na posição do indice i for o mesmo da posição do indice k significa que aquele valor existem em C
+                        existeEmC = 1; //se o número na posição do indice i for o mesmo da posição do indice k significa que aquele valor existem em C
                         
                     }
                 }
 
                 
-                if (ExisteEmC == 0) {
+                if (existeEmC == 0) {
                     C[TAMC] = A[i];
                     TAMC = TAMC + 1; 
                     
