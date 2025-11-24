@@ -13,8 +13,8 @@ public class Exec11 {
         
         int x;
         int i;
-        int encontrado = 0;
-        int posicao = -1;
+        int encontrado = 0; //mostra se foi encontrado ou nao
+        int posicao = -1; // guarda a posição do elemento encontrado e -1 significa "não encontrado"
 
         
         for (i = 0; i < TAM; i++) {
@@ -29,13 +29,14 @@ public class Exec11 {
         
         x = leia.nextInt();
 
-        
+
+        //se o valor da posiçao do indice for igual a X encontramos o elemento
         for (i = 0; i < TAM; i++) {
         	
             if (A[i] == x) {
             	
-                encontrado = 1;
-                posicao = i;
+                encontrado = 1; //mostra que foi encontrado
+                posicao = i; //guarda a posicao
                 
             }
         }
