@@ -15,7 +15,7 @@ public class Exec8 {
         int[] B = new int[TAM];
         
         int i;
-        int j;
+        int j; //segundo indice
         
         int soma;
         
@@ -30,15 +30,15 @@ public class Exec8 {
         for (i = 0; i < TAM; i++) {
             soma = 0;
             
-            
-            for (j = i; j < TAM; j++) {
+            // laço para a soma...
+            for (j = i; j < TAM; j++) { //usa o j pra nao dar problema com o outro indice
                 soma = soma + A[j];
             }
-            B[i] = soma;
+            B[i] = soma; // armazena o resultado no vetor B
         }
 
         
-        System.out.println("--- Vetor A ---");
+        System.out.println("-- Vetor A --"); //mostra o vetor A
         
         for (i = 0; i < TAM; i++) {
         	
@@ -46,7 +46,7 @@ public class Exec8 {
         }
         
         
-        System.out.println("--- Somatorio a partir de i ---");
+        System.out.println("-- Somatorio a partir de i --"); //mostra o vetor B
         
         for (i = 0; i < TAM; i++) {
         	
